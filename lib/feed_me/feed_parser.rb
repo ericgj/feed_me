@@ -67,7 +67,7 @@ module FeedMe
   end
 
   class Rss2FeedParser < FeedParser
-    root_node "//rss[@version='2.0']/channel"
+    root_node "//rss[(@version='2.0') or (@version='0.92')]/channel"
 
     property :title
     property :updated_at, :path => :lastBuildDate, :as => :time
