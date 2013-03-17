@@ -17,3 +17,5 @@ require 'feed_me/abstract_parser'
 require 'feed_me/feed_parser'
 require 'feed_me/item_parser'
 require 'feed_me/person_parser'
+require 'feed_me/opml_parser'
+
